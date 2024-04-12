@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+   .wrapper{
+    /* Background image for the page */
+    background: url(bg.png) ;
+    /* Cover the entire viewport */
+    background-size: cover;
+    height: 100vh;
+   }
+ .navbar{
+   /* Position the navbar at the top of the page */
+   position: relative ;
+   height: 80px;
+   width: 100%;
+   top: 0;
+   left: 0;
+   /* Add a semi-transparent background to the navbar */
+   background: rgba (0,0,0,0.4);
+  }
+ .logo{
+    /* Logo dimensions and positioning */
+    width: 200px;
+    height:55px;
+    padding-left:20px;
+    float: left;
+    padding-top: 3px;
+
+   }
+  .navbar ul{
+      /* Align the navigation links to the left */
+      float: left;
+	  margin-left: 100px;
+      /* Display the links in a horizontal row */
+      flex-wrap: wrap;
+      display: flex;
+      margin-top: 7px;
+   }
+  .navbar ul li {
+      /* Remove the default list style */
+      list-style: none;
+	   margin: 0 8px;
+	   display: inline-block;
+	   line-height: 50px;
+   }
+  .navbar ul li a{
+       /* Font settings for the navigation links */
+       font-size: 20px;
+	   font-family: 'Roboto', sans-serif;
+       font-weight: bold;
+	   color: white;
+	   padding: 6px 13px;
+	   text-decoration: none;
+	   transition:.4s;
+   }
+  .search-icon{
+      /* Position and style the search icon */
+      float: right;
+      margin-right: 50px;
+      height: 35px;
+      width: 270px;
+      display: flex;
+      margin-top: 14px;      
+      border-radius: 5px;
+      background-color: rgb(64, 131, 65);
+      
+   }
+  .search-icon input{
+      /* Style the search input field */
+      height: 100%;
+      width: 230px;
+      border: none;
+      outline: none;
+      padding: 0 10px;
+      color: #000;
+      font-size: 16px;
+      border-radius: 5px 0 0 5px;
+
+   }
+  .search-icon.icon{
+      /* Style the search icon */
+      height: 100%;
+      width: 50px;
+      line-height: 40px;
+      text-align: center;
+      background: #b6f9be;
+      border-radius: 5px 0 0 5px ;
+      cursor: pointer;
+   }
+  .search-icon.icon:hover{
+      /* Change the background color on hover */
+      background: #b6f9be;
+   }
+  .search-icon.icon span{
+      /* Change the icon color */
+      color: #b6f9be;
+      font-size: 18px;
+   }
+  .navbar ul li a.active,
+  .navbar ul li a:hover{
+      /* Change the background color of the active and hovered links */
+      background: rgb(64, 131, 65);
+      border-radius: 10px;
+   }
+  .wrapper.center{
+      /* Position and style the center content */
+      position: absolute;
+      left: 52%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-family: sans-serif;
+      user-select: none;
+   }
+  .center h1{
+      /* Style the main heading */
+      color: rgb(54, 99, 56);
+      font-family: 'poppins';
+      font-size: 50px;
+      width: 900px;
+      font-weight: bold;
+      text-align: center;
+   }
+  .center p{
+      /* Style the main paragraph */
+      color: rgb(3, 68, 6);
+      font-family:calibri;
+      font-size: 25px;
+      margin: auto;
+      width: 85%;
+      font-weight: bold;
+      text-align: center;
+   }
+</style>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class= "logo" src="images/leaf.png">
+            <ul>
+                <div>
+                <li><a href="main.html">HOME</a></li>
+                <li><a class="active" href="#">ABOUT</a></li>
+                </div>   
+            </ul>
+       
+            <div class="search-icon">
+                <input type="search"  placeholder="Search...">
+                <label for="icon">
+                    <span class="fas fa-search"></span>
+                </label>
+            </div>
+        </nav>
+           
+        <div class="center">
+            <h1>ABOUT US</h1>
+            <br>
+            <p>Verde Vogue is a website that helps us make Earth-friendly choices in our lifestyle, 
+                cosmetics, and apparel. It serves as a guide, providing an abundance of helpful knowledge, 
+                suggestions, and recommendations on how to take care of the environment. Verde Vogue emphasizes 
+                the importance of choosing clothing and cosmetics that are not harmful to the environment. 
+                Every person should consider the decisions they make and be a part of a healthy community that is 
+                concerned about enhancing the welfare of all people on the planet. By joining forces, we may minimize our 
+                impact on the environment while establishing an environmentally friendly future that will benefit all people. 
+                Therefore, it is a collective effort towards a sustainable and happy world.</p>
+        </div> 
+    </div>
+</body>
+</html>
