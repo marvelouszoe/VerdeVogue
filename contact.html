@@ -5,9 +5,48 @@
     <meta charset="UTF-8">
    <title> Responsive Contact Us Form | CodingLab </title>
     <link rel="stylesheet" href="contact-us.css">
+    <link rel="stylesheet" type="text/css" href="stylez.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-<body class="contact-body">
+   
+<body>
+  <header>
+    <!-- Checkbox for toggling the navigation menu -->
+    <input type="checkbox" name="" id="toggler">
+
+    <!-- Label for the checkbox -->
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <!-- Logo for the website -->
+    <div class="logo">
+      <a href="main.html">
+        <img src="images/leaf.png" alt="logo" class="left-logo">
+        <span class="logo-text">VerdeVogue.</span>
+      </a>
+    </div>
+
+    <!-- Navigation menu -->
+    <nav class="navbar">
+      <a href="main.html#Home">Home</a>
+      <a href="main.html#About">About</a>
+      <a href="main.html#Culture">Culture</a>
+      <a href="main.html#Clothing">Clothing</a>
+      <a href="main.html#Cosmetics">Cosmetics</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Search icon and input field -->
+    <div class="search-icon">
+            <input type="search" placeholder="Search...">
+            <label for="search icon">
+            <a href="#" class="fas fa-search"></a>
+            </label>
+    </div>
+    <script src="script.js"></script>
+</header>
+
+  <div class="contact-body">
   <div class="contact-container">
     <div class="contact-content">
       <div class="image-box">
@@ -17,13 +56,17 @@
       <div class="C-topic">Send us a message</div>
       <div class="input-box">
         <input type="text" required>
-        <label>Enter your name</label>
+        <label>First Name</label>
       </div>
       <div class="input-box">
         <input type="text" required>
+        <label>Last Name</label>
+      </div>
+      <div class="input-box">
+        <input type="email" required>
         <label>Enter your email</label>
       </div>
-      <div class="message-box">
+      <div class="input-box">
         <input type="text" required>
         <label>Enter your message</label>
       </div>
@@ -33,5 +76,92 @@
     </form>
   </div>
   </div>
+</div>
+  
+<div id="Befooter" class="before">
+  <div class="quote">
+    <div class="day">
+      <h1>Spread the <span>Word.</span></h1>
+    </div>
+    <p>Verde Vogue is committed to providing free access to all who require it.
+      <br> 
+      Support our mission by sharing the positive environmental news and updates with others.</p>
+      <button onclick="copyLink()" class="button">Share</button>
+  </div>
+</div>
+
+
+<!-- Footer section -->
+<footer id="footer">
+  <!-- Content of the footer -->
+  <div class="content">
+    <div class="left box">
+      <div class="upper">
+        <div class="topic"><h3>About Us</h3></div>
+        <p>Verde Vogue is a treasure trove of helpful knowledge, suggestions, 
+          and recommendations on how to take care of the environment, from choosing 
+          eco-friendly fashion brands to adopting sustainable beauty practices. We 
+          emphasize the importance of considering the impact of our decisions on the 
+          planet and being part of a healthy community that cares about the welfare 
+          of all people</p>
+      </div>
+      <div class="lower">
+        <div class="topic"><h3>Connect with Us</h3></div>
+        <div class="phone">
+          <a href="https://www.google.com/contacts/"><i class="fas fa-phone-volume"></i>(+63) 300 224 1719</a>
+        </div>
+        <div class="email">
+          <a href="mailto:gelotfj@gmail.com"><i class="fas fa-envelope"></i>verdevogue@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="middle box">
+      <div class="topic"><h3>Categories</h3></div>
+      <div><a href="main.html#Culture"><h3>Culture</h3></a></div>
+      <div><a href="main.html#Clothing"><h3>Clothing</h3></a></div>
+      <div><a href="main.html#Cosmetics"><h3>Cosmetics</h3></a></div>
+    </div>
+    <div class="right box">
+      <div class="topic">
+        <h3>Newsletter</h3>
+      </div>
+      <span>
+        Subscribe to our newsletter for a weekly dose
+        of news, updates, helpful tips, and
+        product recommendations.
+      </span>
+      <form action="#">
+        <input type="email" placeholder="Enter your email address" required>
+
+        <span style="font-size: 12px; color: #333;">By subscribing, you agree to receive emails from our website.</span>
+        <input type="submit" name="" value="Send">
+      </form>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+<!-- Bottom of the footer -->
+<div class="vbottom">
+<div class="left-bottom">
+<a href="privacy-policy.html">Privacy Policy</a>
+<span> | </span>
+<a href="terms-and-regulations.html">Terms and Regulations</a>
+</div>
+<p> © 2024 <a href="#Home">TechieTigers</a>. All rights reserved</p>
+</div>
+</footer>
+
+<!-- Scroll skipper -->
+<div class="skip">
+<a href="#HomeTact"><i class="fas fa-arrow-up"></i></a>
+</div>
+
 </body>
 </html>

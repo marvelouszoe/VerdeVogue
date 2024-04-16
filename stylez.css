@@ -14,110 +14,137 @@
 
 /* General styles for all elements */
 * {
+  /* Reset margins, padding, and borders for all elements */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;  /* Set the font family for all elements */
+  /* Remove default outlines, borders, and text decorations */
   outline: none;
   border: none;
   text-decoration: none;
-  transition: .2s linear;
+  transition: .2s linear;  /* Set a smooth transition for all properties */
 }
 
 /* Set font size, scroll behavior, and overflow for the HTML element */
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding-top: 16rem;
-  overflow-x: hidden;
+  font-size: 62.5%;  /* Set the font size to 62.5% to make it easier to calculate rem units.
+     For example, 1rem will be equal to 10px, 1.6rem will be equal to 16px, and so on. */
+  scroll-behavior: smooth;  /* Enable smooth scrolling when jumping to anchor links within the page. */
+  scroll-padding-top: 16rem;  /* Add scroll padding to the top of the HTML element to account for the fixed header.
+     This ensures that the content does not get hidden behind the header when jumping to anchor links. */
+  overflow-x: hidden;  /* Hide any horizontal overflow to prevent horizontal scrolling. */
 }
 
 /* Section styles */
 section {
+  /* Padding for the section */
   padding: 2rem 9%;
+  /* Minimum width for the section */
   min-width: 960px;
+  /* Maximum width for the section */
   max-width: 1920px;
-  margin: 0 auto; 
+  /* Margin for the section */
+  margin: 0 auto;
+  /* Background color for the section */
   background: var(--whiteBG);
- }
+}
 
-
+/* Heading styles */
 .heading{
-  text-align: center;
-  font-size: xx-large;
-  font-family: 'Playball', cursive;
-  color: #333;
-  padding: 1rem;
-  margin: 2rem 0;
-  background: rgba(0, 0, 0, .1);
+  text-align: center;  /* Text alignment for the heading */
+  font-size: xx-large;  /* Font size for the heading */
+  font-family: 'Playball', cursive;  /* Font family for the heading */
+  color: #333;  /* Color for the heading */
+  padding: 1rem;  /* Padding for the heading */
+  margin: 2rem 0;  /* Margin for the heading */
+  background: rgba(0, 0, 0, .1);  /* Background color for the heading */
 }
 
+/* Span styles within the heading */
 .heading span{
-  color: var(--green);
-  font-size: 4rem;
+  color: var(--green);  /* Color for the span within the heading */
+  font-size: 4rem;  /* Font size for the span within the heading */
 }
-.button{
-  display: inline-block;
-  margin-top: 1rem;
-  border-radius: 5rem;
-  background: #333;
-  color: #fff;
-  padding: .9rem 3.5rem;
-  cursor: pointer;
-  font-size: 1.7rem; }
 
+/* Button styles */
+.button{
+  display: inline-block;  /* Display property for the button */
+  margin-top: 1rem;  /* Margin for the button */
+  border-radius: 5rem;  /* Border radius for the button */
+  background: #333;  /* Background color for the button */
+  color: #fff;  /* Color for the button text */
+  padding: .9rem 3.5rem;  /* Padding for the button */
+  cursor: pointer;  /* Cursor style for the button */
+  font-size: 1.7rem;  /* Font size for the button text */
+}
+
+/* Button hover styles */
 .button:hover{
-  transform: scale(0.98);
-  background: rgb(39,150,60);
-  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%); }
+  transform: scale(0.98);  /* Transform property for the button on hover */
+  background: rgb(39,150,60);  /* Background gradient for the button on hover */
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
+}
 
 
 
   
 /* Navigation bar styles */
+    /* The header class is used to style the header of the page.
+   It is positioned fixed at the top of the screen, with a
+   background color of light gray (#eee). The padding is set
+   to .5rem 9%, and the display is set to flex with align-items
+   center and justify-content space-between. A box-shadow is
+   added to give the header some depth. */
 header {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0;    left: 0;
   right: 0;
-  background: #eee;
+  background-color: rgba(255, 255, 255, 0.5);  
   padding: .5rem 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1); }
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
 
 /* Logo styles */
 .logo a {
+  /* Display the logo as a flex container with vertically centered content */
   display: flex;
   align-items: center;
-  gap: .1rem;
-  font-size: 2.5rem;
-  color: #333;
-  font-weight: bolder;
-  height: 50px; /* Set the height of the logo container */
-  line-height: 10px; /* Vertically center the text */ }
+  gap: .1rem;  /* Set a small gap between the image and text */
+  font-size: 2.5rem;  /* Set the font size of the logo text */
+  color: #333;  /* Set the color of the logo text */
+  font-weight: bolder;  /* Set the font weight of the logo text */
+  height: 50px;  /* Set the height of the logo container */
+  line-height: 10px;  /* Set the line height to vertically center the text */
+}
 
 .left-logo {
+  /* Set the width and height of the logo image */
   width: 50px;
   height: auto;
-  object-fit: contain;
-  cursor: pointer; }
+  object-fit: contain;  /* Set the object fit to contain the image within the specified dimensions */
+  cursor: pointer;  /* Set the cursor to a pointer when hovering over the image */
+}
 
 .logo-text {
-  font-family: 'GFS Didot', serif;
+  font-family: 'GFS Didot', serif;  /* Set the font family of the logo text */
 }
 
 
 
-/* Navbar links styles */
+/* Navbar categories styles */
 header .navbar a {
-  font-size: 1.5rem;
+  font-size: 1.5rem;  /* Font size and padding for navbar links */
   padding: 0 2.3rem;
-  color: rgb(0, 0, 0);
+  color: #333;  /* Color for navbar categories */
 }
-.navbar a{
+
+/* Styles for navbar links */
+.navbar a {  /* Position, color, font size, font weight, padding, and text decoration for navbar links */
   position: relative;
   color: #333;
   font-size: 20px;
@@ -125,7 +152,9 @@ header .navbar a {
   padding: 6px 0;
   text-decoration: none;
 }
-.navbar a:before{
+
+/* Styles for navbar categories hover effect */
+.navbar a:before {  /* Content, position, bottom, left, height, width, background, border radius, and transition for navbar link hover effect */
   content: '';
   position: absolute;
   bottom: 0;
@@ -136,14 +165,18 @@ header .navbar a {
   border-radius: 12px;
   transition: all 0.4s ease;
 }
-.navbar a:hover:before{
-  width: 100%;
+
+/* Styles for navbar link hover effect */
+.navbar a:hover:before {
+  width: 100%;  /* Width and transform for navbar link hover effect */
   transform: scale(0.9);
 }
-header.sticky{
-  padding: 0 2.3rem;
+
+/* Styles for sticky header */
+header.sticky { 
+  padding: 0 2.3rem; /* Padding and background for sticky header */
   background: #eee;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);  /* Box shadow for sticky header */
 }
 
 
@@ -163,7 +196,7 @@ header .fa-bars {
 
 
 /* Home section */
-.home{
+.home{ /* This is the container for the home section of the page */
   display: flex;
   align-items: center;
   min-height: 100vh;
@@ -172,83 +205,91 @@ header .fa-bars {
   min-width: 960px;
   max-width: 1920px;
   margin: 0 auto;  
-  background: url(images/aloe.jpg);
+  background: url(images/aloe.jpg); /* This is the background image for the home section */
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
-.home .content{
+.home .content{ /* This is the container for the content within the home section */
   max-width: 80rem;
 }
-.home .content h3{
-  font-size: 8rem;
-  text-align: center;
+.home .content h3{ /* This is the heading for the home section */
+  font-size: 7rem;
   color: #333;
 }
-.home .content span{
+.home .content span{ /* This is the span element within the heading */
   font-size: 3.5rem;
-  color: var(--green);
+  color: var(--green); /* This is the color variable for the span element */
   padding: 1rem 0;
   line-height: 1.5;
 }
-.home .content p{
+.home .content p{ /* This is the paragraph element within the home section */
   font-size: 1.5rem;
-  color: #6f6f6f;
+  color: #6f6f6f; /* This is the color variable for the paragraph element */
   padding: 1rem 0;
   line-height: 1.5;
 }
 
 
 
-/* About section */
+/* This CSS code is for the 'About' section of a website */
 .about .row{
-  display: flex;
+  display: flex; /* This property is used to create a flex container and align items in the center */
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  gap: 2rem; /* This property is used to create a gap between the flex items */
+  flex-wrap: wrap; /* This property is used to allow the flex items to wrap onto multiple lines */
   padding: 2rem 0;
   padding-bottom: 3rem;
 }
+
 .about .row .imgBG-container{
-  flex: 1 1 40rem;
-  position: relative;
+  flex: 1 1 40rem; /* This property is used to define the size of the flex item */
+  position: relative; /* This property is used to position the child elements relative to this container */
 }
+
 .about .row .imgBG-container img{
-  width: 100%;
-  border:1.5rem solid #fff;
-  border-radius: .5rem;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-  height: 100%;
-  object-fit: cover;
+  width: 100%; /* This property is used to set the width of the image to 100% of its parent container */
+  border:1.5rem solid #fff; /* This property is used to add a white border to the image */
+  border-radius: .5rem; /* This property is used to add rounded corners to the image */
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); /* This property is used to add a shadow to the image */
+  height: 100%; /* This property is used to set the height of the image to 100% of its parent container */
+  object-fit: cover; /* This property is used to ensure the image covers the entire container while maintaining its aspect ratio */
 }
+
 .about .row .imgBG-container h3{
-  position: absolute;
-  top: 50%; transform: translateY(-50%);
-  font-size: 3rem;
-  color: #333;
-  background-color: #fff;
-  width: 100%;
-  padding: 1rem 2rem;
-  text-align: center;
-  mix-blend-mode: normal;
+  position: absolute; /* This property is used to position the heading over the background image */
+  top: 50%; transform: translateY(-50%); /* This property is used to center the heading vertically */
+  font-size: 3rem; /* This property is used to set the font size of the heading */
+  color: #333; /* This property is used to set the color of the heading */
+  background-color: #fff; /* This property is used to set the background color of the heading */
+  width: 100%; /* This property is used to set the width of the heading to 100% of its parent container */
+  padding: 1rem 2rem; /* This property is used to add padding to the heading */
+  text-align: center; /* This property is used to center the text of the heading */
+  mix-blend-mode: normal; /* This property is used to define how the heading should blend with its background */
 }
+
 .about .row .content{
-  flex: 1 1 40rem;
+  flex: 1 1 40rem; /* This property is used to define the size of the flex item */
 }
+
 .about .row .content h3{
-  font-size: 3rem;
-  color: #333;
+  font-size: 3rem; /* This property is used to set the font size of the heading */
+  color: #333; /* This property is used to set the color of the heading */
 }
+
 .about .row .content p{
-  font-size: 1.5rem;
-  color: #333;
-  text-align: justify;
-  padding: 5rem 0;
-  padding-top: 1rem;
-  line-height: 1;
+  font-size: 1.5rem; /* This property is used to set the font size of the paragraph */
+  color: #333; /* This property is used to set the color of the paragraph */
+  text-align: justify; /* This property is used to justify the text of the paragraph */
+  padding: 5rem 0; /* This property is used to add padding to the paragraph */
+  padding-top: 1rem; /* This property is used to add padding to the top of the paragraph */
+  line-height: 1; /* This property is used to set the line height of the paragraph */
 }
+
 
 /* Culture section */
 #Culture{
+  /* Display as a grid, set minimum and maximum width, center content, and apply background color */
   display: grid;
   min-width: 960px;
   max-width: 1920px;
@@ -256,15 +297,15 @@ header .fa-bars {
   place-items: center;
   text-align: center;
   align-items: center;
-  background: var(--whiteBG)
+  background: var(--whiteBG);
 }
 
 .culture-heading{
+  /* Center text, set font size, align and justify content, set color, width, padding, and margin */
   text-align: center;
   font-size: 4rem;
   align-items: baseline;
   justify-content: center;
-  font-size: 4rem;
   color: #333;
   width: 100%;
   padding: 2px;
@@ -273,55 +314,67 @@ header .fa-bars {
   font-family: 'Playball', cursive;
 }  
 .culture-heading span{
+  /* Set color and font size for span element */
   color: var(--green);
   font-size: 1.8rem;
   font-weight: 600;
 }
   
 .slider{
+  /* Display as flex, set maximum width, and center content */
   max-width: 1100px;
   display: flex;
 }
 .slider:hover{
+  /* Change cursor to grab on hover */
   cursor: grab;
 }
 .slider .CU-card{
+  /* Set flex value, margin, and background color */
   flex: 1;
   margin: 0 10px;
   background:var(--shadedBG);
 }
 .slider .CU-card .img{
+  /* Set height and width */
   height: 200px;
   width: 100%;
 }
 .slider .CU-card .img img{
+  /* Set height and width, and object fit */
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 .slider .CU-card .content{
+  /* Set padding */
   padding: 10px 20px;
 }
 .CU-card .content .title{
-  font-size: 25px;
+  /* Set font size and weight */
+  font-size: 24px;
   font-weight: 600;
 }
 .CU-card .content .sub-title{
+  /* Set font size, weight, color, and line height */
   font-size: 20px;
   font-weight: 600;
   color: var(--lite-green);
   line-height: 20px;
 }
 .CU-card .content p{
+  /* Set text alignment and margin */
   text-align: justify;
   margin: 10px 0;
 }
 .CU-card .content .btn{
+  /* Set text alignment and margin */
   display: block;
   text-align: left;
   margin: 10px 0;
 }
 .CU-card .content .btn button{
+  /* Set background color, color, border, font size, padding, border radius, and cursor */
   background: var(--green);
   color: #fff;
   border: none;
@@ -335,9 +388,12 @@ header .fa-bars {
   display: inline-block;
 }
 .CU-card .content .btn button:hover{
+  /* Set transform, background color, and transition */
   transform: scale(0.98);
   background: rgb(39,150,60);
-  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);}
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
+}
+
 
 /* Clothing section */
 #Clothing{
@@ -519,6 +575,7 @@ header .fa-bars {
 
 /* Media queries for responsive design */
 @media (max-width: 991px) {
+  /* Reduce font size and adjust padding for smaller screens */
   html {
     font-size: 55%;
   }
@@ -529,11 +586,14 @@ header .fa-bars {
     padding: 2rem;
   }
 
+  /* Adjust background position for home section */
   .home{
     background-position: left;
   }
 }
+
 @media (max-width: 768px) {
+  /* Display hamburger menu icon and hide navigation links */
   header .fa-bars {
     display: block;
   }
@@ -546,9 +606,13 @@ header .fa-bars {
     border-top: .1rem solid rgba(0, 0, 0, .1);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+
+  /* Show navigation links when hamburger menu icon is clicked */
   header #toggler:checked ~ .navbar {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
+
+  /* Adjust styles for navigation links */
   header .navbar a {
     margin: 1.5rem;
     padding: 1.5rem;
@@ -557,6 +621,7 @@ header .fa-bars {
     display: block;
   }
 
+  /* Adjust font sizes for home section content */
   .home .content h3{
     font-size: 5rem;
   }
@@ -564,15 +629,20 @@ header .fa-bars {
     font-size: 2.5rem;
   }
 }
+
 @media (max-width: 450px) {
+  /* Reduce font size for smaller screens */
   html {
     font-size: 50%;
   }
 
+  /* Adjust font size for headings */
   .heading{
     font-size: 3rem;
   }
 }
+
+
 
 /* BEFORE FOOTER SECTION START */
 #Befooter {
@@ -628,63 +698,85 @@ header .fa-bars {
 
 /* FOOTER SECTION START */
 footer {
+  /* Set the width of the footer to 100% and position it at the bottom of the page */
   width: 100%;
   position: relative;
   bottom: 0;
   left: 0;
+  /* Set the background color of the footer */
   background: var(--shadedBG);
 }
 
 footer .content {
+  /* Set the maximum width of the content container and center it */
   max-width: 1350px;
   margin: auto;
-  padding: 20px;
-  display: flex;
+  padding: 20px;  /* Add some padding to the container */
+  display: flex;  /* Use flexbox to arrange the content in rows and columns */
   flex-wrap: wrap;
   justify-content: space-between;
 }
-footer .content p,
-a {
-  color: rgb(0, 0, 0);
+footer .content p,a {
+  /* Set the color of the text in the content container */
+  color: #333;
 }
 footer .content .box {
+  /* Set the width of each box in the content container */
   width: 33%;
   transition: all 0.4s ease;
 }
 footer .content .topic {
+  /* Set the font size, weight, and color of the topic headings */
   font-size: 22px;
   font-weight: 600;
-  color: rgb(0, 0, 0);
+  color: #333;
+  /* Add some margin to the bottom of the headings */
   margin-bottom: 16px;
 }
 
 footer .content p {
+  /* Justify the text in the content container */
   text-align: justify;
 }
 footer .content .lower .topic {
+  /* Add some margin to the top and bottom of the lower topic headings */
   margin: 24px 0 5px 0;
 }
 footer .content .lower i {
+  /* Add some padding to the right of the icons in the lower section */
   padding-right: 16px;
 }
 footer .content .middle {
+  /* Add some padding to the left of the middle section */
   padding-left: 80px;
 }
 footer .content .middle a {
-  line-height: 32px;
+  /* Set the line height of the links in the middle section */
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+footer .content .middle a:hover {
+  text-decoration: underline;
+  color: var(--green);
+  transform: scale(0.98);
+  font-weight: bold;
 }
 footer .content .right input[type="email"] {
-  height: 45px;
+  /* Set the height, width, and other styles for the email input field */
+  height: 50px;
   width: 100%;
   outline: none;
-  color: rgb(0, 0, 0);
+  color: #333;
   background: var(--whiteBG);
   border-radius: 5px;
-  padding-left: 10px;
-  font-size: 17px;
-  border: 2px solid #222222;
+  padding-left: 12px;
+  font-size: 12px;
+  border: 2px solid #333;
 }
 footer .content .right input[type="submit"] {
+  /* Set the height, width, and other styles for the submit button */
   height: 42px;
   width: 100%;
   font-size: 18px;
@@ -697,15 +789,18 @@ footer .content .right input[type="submit"] {
   cursor: pointer;
   margin-top: 12px;
   border: 2px solid #eee;
+  /* Add a transition effect to the submit button */
   transition: all 0.3s ease-in-out;
 }
 footer .content .right input[type="submit"]:hover {
+  /* Set the hover styles for the submit button */
   background: rgb(39,150,60);
-  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);  
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
   color: var(--whiteBG);
   transform: scale(0.98);
 }
 footer .content .media-icons a {
+  /* Set the styles for the social media icons */
   font-size: 16px;
   height: 45px;
   width: 45px;
@@ -715,31 +810,44 @@ footer .content .media-icons a {
   border-radius: 5px;
   border: 2px solid #222222;
   margin: 30px 5px 0 0;
+  /* Add a transition effect to the social media icons */
   transition: all 0.3s ease;
 }
 footer .content .media-icons a:hover {
+  /* Set the hover styles for the social media icons */
   color: #fff;
   transform: scale(1);
   background: rgb(39,150,60);
   background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
 }
 footer .vbottom {
+  /* Set the styles for the bottom text in the footer */
   width: 100%;
   text-align: right;
   color: #333;
   padding: 0 40px 5px 0;
+  /* Add the Privacy Policy and Terms and Regulations links */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
 }
 footer .vbottom a {
+  /* Set the styles for the link in the bottom text */
   color: var(--green);
 }
 footer a {
+  /* Add a transition effect to all links in the footer */
   transition: all 0.3s ease;
 }
 footer a:hover {
+  /* Set the hover styles for all links in the footer */
+  text-decoration: underline;
   color: var(--green);
 }
 
 footer.hidden {
+  /* Hide the footer when it has the "hidden" class */
   display: none;
 }
 
@@ -748,27 +856,38 @@ main {
   padding-bottom: 10rem;
 }
 
+/* This media query targets screens with a maximum width of 1100px */
 @media (max-width:1100px) {
+  /* The footer's content's middle section has its padding-left set to 50px */
   footer .content .middle {
     padding-left: 50px;
   }
 }
+
+/* This media query targets screens with a maximum width of 950px */
 @media (max-width:950px) {
+  /* The footer's content's box has its width set to 50% */
   footer .content .box {
     width: 50%;
   }
+  /* The content's right section has its margin-top set to 40px */
   .content .right {
     margin-top: 40px;
   }
 }
+
+/* This media query targets screens with a maximum width of 560px */
 @media (max-width:560px) {
+  /* The footer is positioned relative */
   footer {
     position: relative;
   }
+  /* The footer's content's box has its width set to 100% and margin-top set to 30px */
   footer .content .box {
     width: 100%;
     margin-top: 30px;
   }
+  /* The footer's content's middle section has its padding-left set to 0 */
   footer .content .middle {
     padding-left: 0;
   }
