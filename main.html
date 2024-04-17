@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale1.0">
-
-    <!-- Title of the website -->
     <title>Verde Vogue</title>
-
-    <!-- Link to Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-
-    <!-- Link to external stylesheet -->
     <link rel="stylesheet" type="text/css" href="stylez.css">    
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
+
 
 <body>
     <!-- Header section -->
@@ -54,7 +44,6 @@
                 <a href="#" class="fas fa-search"></a>
                 </label>
         </div>
-        <script src="script.js"></script>
     </header>
 
     <!-- Home section -->
@@ -95,7 +84,7 @@
     <!-- Culture section -->
     <section id="Culture">
       <h1 class="culture-heading">Culture. <span> Discover sustainable innovations </span></h1>
-      <div class="slider owl-carousel">
+      <div class="kultura">
         <div class="CU-card">
           <div class="img"><img src="culturePIC/cult1.jpg" alt=""></div>
           <div class="content">
@@ -200,12 +189,6 @@
           </div>
         </div>
       </div>
-      <script>
-        $(".slider").owlCarousel({
-          autoplayTimeout: 2000, //2000ms = 2s;
-          autoplayHoverPause: true,
-        });
-      </script>
     </section>
     
 
@@ -213,7 +196,7 @@
     <!-- Clothing section -->
     <section id="Clothing">
         <h1 class="clothing-heading">Clothing. <span> Discover Eco-Friendly Brands and Products </span></h1>
-        <div class="slider owl-carousel">
+        <div class="damit">
           <div class="CL-card">
             <div class="img"><img src="clothingPIC/clot1.jpg" alt=""></div>
             <div class="content">
@@ -283,18 +266,12 @@
             </div>
           </div>
         </div>
-        <script>
-          $(".slider").owlCarousel({
-            autoplayTimeout: 2000, //2000ms = 2s;
-            autoplayHoverPause: true,
-          });
-        </script>
       </section>
 
     <!-- Cosmetics section -->
     <section id="Cosmetics">
         <h1 class="cosmetics-heading">Cosmetics. <span> Explore Natural, Organic, and Cruelty-Free Products </span></h1>
-        <div class="slider owl-carousel">
+        <div class="meykup">
           <div class="COS-card">
             <div class="img"><img src="cosmeticsPIC/cosAXIOLOGY.jpg" alt=""></div>
             <div class="content">
@@ -366,14 +343,9 @@
             </div>
           </div>
         </div>
-        <script>
-          $(".slider").owlCarousel({
-            autoplayTimeout: 2000, //2000ms = 2s;
-            autoplayHoverPause: true,
-          });
-        </script>
       </section>
 
+    <!-- Before Footer section -->
       <div id="Befooter" class="before">
         <div class="quote">
           <div class="day">
@@ -383,7 +355,6 @@
             <br> 
             Support our mission by sharing the positive environmental news and updates with others.</p>
             <button onclick="copyLink()" class="button">Share</button>
-</script>
         </div>
       </div>
 

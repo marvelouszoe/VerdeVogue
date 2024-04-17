@@ -38,15 +38,11 @@ html {
 
 /* Section styles */
 section {
-  /* Padding for the section */
   padding: 2rem 9%;
-  /* Minimum width for the section */
   min-width: 960px;
-  /* Maximum width for the section */
   max-width: 1920px;
-  /* Margin for the section */
   margin: 0 auto;
-  /* Background color for the section */
+  margin-top: 5rem; /* Add some margin at the top of each section */
   background: var(--whiteBG);
 }
 
@@ -90,15 +86,10 @@ section {
 
   
 /* Navigation bar styles */
-    /* The header class is used to style the header of the page.
-   It is positioned fixed at the top of the screen, with a
-   background color of light gray (#eee). The padding is set
-   to .5rem 9%, and the display is set to flex with align-items
-   center and justify-content space-between. A box-shadow is
-   added to give the header some depth. */
 header {
   position: fixed;
-  top: 0;    left: 0;
+  top: 0;    
+  left: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.5);  
   padding: .5rem 9%;
@@ -148,7 +139,7 @@ header .navbar a {
   position: relative;
   color: #333;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 6px 0;
   text-decoration: none;
 }
@@ -158,9 +149,10 @@ header .navbar a {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 2px;
-  width: 0%;
+  width: 0;
   background: var(--green);
   border-radius: 12px;
   transition: all 0.4s ease;
@@ -168,17 +160,9 @@ header .navbar a {
 
 /* Styles for navbar link hover effect */
 .navbar a:hover:before {
-  width: 100%;  /* Width and transform for navbar link hover effect */
-  transform: scale(0.9);
+  width: calc(100% - 4.6rem); /* Adjust the width to be the width of the text minus the padding */
+  transform: translateX(-50%) scale(0.9);
 }
-
-/* Styles for sticky header */
-header.sticky { 
-  padding: 0 2.3rem; /* Padding and background for sticky header */
-  background: #eee;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);  /* Box shadow for sticky header */
-}
-
 
 /* Responsive page styles */
 header #toggler {
@@ -291,6 +275,9 @@ header .fa-bars {
 #Culture{
   /* Display as a grid, set minimum and maximum width, center content, and apply background color */
   display: grid;
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
   min-width: 960px;
   max-width: 1920px;
   margin: 0 auto;  
@@ -320,33 +307,31 @@ header .fa-bars {
   font-weight: 600;
 }
   
-.slider{
-  /* Display as flex, set maximum width, and center content */
-  max-width: 1100px;
-  display: flex;
+.kultura{
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 columns */
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
 }
-.slider:hover{
-  /* Change cursor to grab on hover */
-  cursor: grab;
+.kultura .CU-card{
+  border: 2px solid var(--whiteBG);
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: var(--shadedBG);
 }
-.slider .CU-card{
-  /* Set flex value, margin, and background color */
-  flex: 1;
-  margin: 0 10px;
-  background:var(--shadedBG);
-}
-.slider .CU-card .img{
+.kultura .CU-card .img{
   /* Set height and width */
   height: 200px;
   width: 100%;
 }
-.slider .CU-card .img img{
+.kultura .CU-card .img img{
   /* Set height and width, and object fit */
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.slider .CU-card .content{
+.kultura .CU-card .content{
   /* Set padding */
   padding: 10px 20px;
 }
@@ -425,25 +410,29 @@ header .fa-bars {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.slider{
-  max-width: 1100px;
-  display: flex;
+.damit{
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 columns */
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
 }
-.slider .CL-card{
-  flex: 1;
-  margin: 0 10px;
-  background: #fff;
+.damit .CL-card{
+  border: 2px solid var(--whiteBG);
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: var(--shadedBG);
 }
-.slider .CL-card .img{
+.damit .CL-card .img{
   height: 200px;
   width: 100%;
 }
-.slider .CL-card .img img{
+.damit .CL-card .img img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.slider .CL-card .content{
+.damit .CL-card .content{
   padding: 10px 20px;
 }
 .CL-card .content .title{
@@ -514,25 +503,29 @@ header .fa-bars {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.slider{
-  max-width: 1100px;
-  display: flex;
+.meykup{
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 columns */
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
 }
-.slider .COS-card{
-  flex: 1;
-  margin: 0 10px;
-  background: #fff;
+.meykup .COS-card{
+  border: 2px solid var(--whiteBG);
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: var(--shadedBG);
 }
-.slider .COS-card .img{
+.meykup .COS-card .img{
   height: 200px;
   width: 100%;
 }
-.slider .COS-card .img img{
+.meykup .COS-card .img img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.slider .COS-card .content{
+.meykup .COS-card .content{
   padding: 10px 20px;
 }
 .COS-card .content .title{
