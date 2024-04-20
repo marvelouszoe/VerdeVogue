@@ -1,0 +1,118 @@
+/* Import Google Fonts for Poppins, Didot, and Helvetica font families */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+:root {
+  --green: #0c6b3d;
+  --lite-green: #27963C;
+  --whiteBG: #fff;
+  --shadedBG: #eee;
+  --yellow: #F5DA5E }
+
+#Culture{
+  display: grid;
+  min-width: 960px;
+  max-width: 1920px;
+  margin: 0 auto;  
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  background: var(--whiteBG)
+}
+.back-btn{
+    position: fixed;
+    margin-left: 5px;
+    margin-top: 45px;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+.culture-heading{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem ; 
+  color: #333;
+  width: 80%;
+  height: 80px;
+  margin-left: 10%;
+  padding: 2px;
+  box-sizing: border-box;  
+  margin-top: 4rem ;
+  background: rgba(0, 0, 0, .1);
+  font-family: 'Playball', cursive;
+}  
+.clothing-heading span{
+  color: var(--green);
+  font-family: 'Playball';
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+
+
+.content .sub-title{
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'PLayball';
+  font-size: 30px;
+  font-weight: 200px;
+  color: var(--lite-green);
+}
+    .content img{
+        margin-top: 20px;
+        width: 800px;
+        height: 500px;
+        align-items: center;
+        margin-left: rem;
+    }
+    .content h3{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .content h2{
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .content span{
+        margin: auto;
+        font-size: 15px;
+        margin-left: 20px;
+        text-align: center;
+        display: inline-block;
+    }
+    .content p{
+        margin: auto;
+        width: 70%; 
+        width: 60%; 
+        font-family: 'Poppins';
+        font-size: 15px;
+        text-align: justify;
+        text-indent: 20px;
+    }
+    .color{
+        font-weight: bold;
+    }
+    .sunki{
+        font-weight: bold;
+    }
+    .overview{
+        font-weight: bold;
+    }
+    .what{
+        font-weight: bold;
+    }
