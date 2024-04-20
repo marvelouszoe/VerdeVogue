@@ -403,7 +403,7 @@ header .fa-bars {
   margin: 0 auto;  
   place-items: center;
   text-align: center;
-  align-items: center;
+  align-items: right;
   background: var(--whiteBG)
 
 }
