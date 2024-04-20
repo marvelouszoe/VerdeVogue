@@ -5,133 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cult1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/content.css">
+    <link rel="stylesheet" type="text/css" href="/css/stylez.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/navigation-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<style>
-    /* Import Google Fonts for Poppins, Didot, and Helvetica font families */
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Quintessential&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-    @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-    :root {
-      --green: #0c6b3d;
-      --lite-green: #27963C;
-      --whiteBG: #fff;
-      --shadedBG: #eee;
-      --yellow: #F5DA5E }
-    
-    #Culture{
-      display: grid;
-      min-width: 960px;
-      max-width: 1920px;
-      margin: 0 auto;  
-      place-items: center;
-      text-align: center;
-      align-items: center;
-      background: var(--whiteBG)
-    }
-    .back-btn{
-        position: fixed;
-        margin-left: 5px;
-        margin-top: -35px;
-        color: black;
-        font-size: 24px;
-        text-decoration: none;
-    }
-    .culture-heading{
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      font-size: 7rem ; 
-      color: #333;
-      width: 80%;
-      height: 80px;
-      margin-left: 10%;
-      padding: 2px;
-      box-sizing: border-box;  
-      margin-top: 4rem ;
-      background: rgba(0, 0, 0, .1);
-      font-family: 'Playball', cursive;
-    }  
-    .clothing-heading span{
-      color: var(--green);
-      font-family: sans-serif;
-      font-size: 3rem;
-      font-weight: 600;
-    }
-    .content .sub-title{
-      text-align: center;
-      font-family: 'sans-serif';
-      font-size: 30px;
-      font-weight: 200px;
-      color: var(--lite-green);
-    }
-    .content  img{
-            margin-top: 70px;
-            width: 800px;
-            height: 500px;
-            margin-left: 330px;
-            border-radius: 20px;
-        }
-        .content  h3{
-            margin: auto;
-            width: 80%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-weight: bold;
-            font-size: 20px;
-        }
-        .content  h2{
-            margin: auto;
-            width: 80%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-weight: bold;
-            font-size: 35px;
-        }
-        .content  span{
-            margin: auto;
-            font-size: 20px;
-            margin-left:340px;
-            text-align: center;
-        }
-        .content  p{
-            margin: auto;
-            width: 70%; 
-            width: 60%; 
-            font-family: calibri;
-            font-size: 20px;
-        }
-        .color{
-            font-weight: bold;
-        }
-        .sunki{
-            font-weight: bold;
-        }
-        .overview{
-            font-weight: bold;
-        }
-        .what{
-            font-weight: bold;
-        }
-    </style>
+
 <body>
+        <!-- Header section -->
         <header>
-        <div class="Clothing" >        
-            <a href="/main.html#clothingSEC" class="back-btn"><i class="fas fa-arrow-left"></i></a>
-            <h1 class="culture-heading">Clothing. <span> Discover sustainable innovations </span></h1>
-        </div>
-            <div class="content">
-                <img src="/clothingPIC/clot7.jpeg" alt="">
-                <span class="glyphicon glyphicon-camera"></span> By Alex Assoune
-                <br>
-                <h2>Tela</h2>
-                <div class="sub-title">Where Culture Meets Style</div>
+            <!-- Checkbox for toggling the navigation menu -->
+            <input type="checkbox" name="" id="toggler">
+    
+            <!-- Label for the checkbox -->
+            <label for="toggler" class="fas fa-bars"></label>
+    
+            <!-- Logo for the website -->
+            <div class="logo">
+              <a href="/main.html">
+                <img src="/images/leaf.png" alt="logo" class="left-logo">
+                <span class="logo-text">VerdeVogue.</span>
+              </a>
+            </div>
+    
+            <!-- Navigation menu -->
+            <nav class="navbar">
+              <a href="/main.html">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/main.html#Culture">Culture</a>
+              <a href="/main.html#Clothing">Clothing</a>
+              <a href="/main.html#Cosmetics">Cosmetics</a>
+              <a href="/contact.html">Contact Us</a>
+            </nav>
+    
+            <!-- Search icon and input field -->
+            <div class="search-icon">
+                    <input type="search" placeholder="Search...">
+                    <label for="search icon">
+                    <a href="#" class="fas fa-search"></a>
+                    </label>
+            </div>
+        </header>
+    <div class="back-btn">
+        <a href="/main.html#Clothing">
+          <i class="fas fa-arrow-left"></i>
+          <span class="back-label"> Back </span>
+        </a>
+      </div>   
+      <div class="content" id="content-body">
+
+        <img src="/clothingPIC/TELA/clotTELA.1.jpeg" alt="">
+
+                          <br>
+                          <h2 id="headingz"> TELA </h2>
+                          <div class="sub-title"> Get To Know Tela, A Sustainable Label Using Fabric Scraps </div>
                 <br>
                 <p>
                     <br>
@@ -140,38 +68,136 @@
                 </p>
                 <br>
                 <p>
-                    <br>
-                    Tela takes it slowly simply because it's better for Mother Earth. It incorporates
-                    sustainability in every aspect, from design to materials to manufacturing to even packaging and delivery.
+                    Named after the Filipino word for fabric, Tela is the newest sustainable brand in town. 
+                    It's designed by 19-year-old Alyssa Lagon, daughter to the forces behind popular Filipino 
+                    fashion brand BAYO. "For BAYO, since everything is done in-house, I could see first-hand the 
+                    textile scraps that are produced every year," Alyssa shares. "I thought to myself, 'What can 
+                    I do to transform this waste into something useful?' And that's where the idea of creating a 
+                    sustainable brand — which is now Tela — came to mind." 
                 </p>
                 <br>
                 <br>
-                <img src="/clothingPIC/clot7.2.jpg" alt="">
-                <br>
-                <h3>
-                    Buck Mason CPO Jacket
-                </h3>
+                <img src="/clothingPIC/TELA/clotTELA.jpg" alt="">
+                <a href="https://www.candidclothing.com" target="_blank">
+                    <span id="photographer"><i class="fas fa-camera"></i> Alyssa Lagon, Owner of Tela </span>
+                  </a>   
                 <br>
                 <p>
-                    She's draped in our in-house designed print, where artistry meets responsibility.
-                    The fabric? It’s a whisper against the skin—soft, breathable, with a kind-to-the-earth promise.
-                    Cut to flatter with a fit that feels custom-made, this is the dress that invites admiring glances
-                    and enviable "where'd you get that?" questions. Slip into this Tela piece; it's sustainable fashion that you'll reach for again and again. 
+                    From the first step to the finishing touches, Tela's vision is to cultivate a mindful 
+                    connection between the makers and buyers by engaging local craftsmen, through their partner, 
+                    the BAYO Foundation. Excess fabrics from BAYO and other affiliate brands are donated to the 
+                    foundation and is forwarded to weaving communities like the one in Argao, Cebu via ANTHILL 
+                    Fabrics. Once these scraps are made into useable woven fabrics, BAYO Foundation buys them 
+                    back and sells them to fashion brands. Thus, a cycle of sustainability is fostered. 
+                     <br>
                      <br>
                 </p>
-                <img src="/clothingPIC/clot7.3.jpg" alt="">
+                <img src="/clothingPIC/TELA/clotTELA.2.jpg" alt="">
                 <br>
                 <h3>
-                    Buck Mason Brushed Loopback Hooded Sweatshirt
+                    Tela uses adjustable straps instead of zippers and buttons
                 </h3>
                 <br>
+                <br>
                 <p>
-                    The puffed sleeve accentuates your shoulders to make you stand out from the crowd.
-                    Pair this with denim jeans for a casual look, or with a skirt for a more formal look.
+                    Tela kickstarts their debut with three collections: Refresh (spotlights natural fibres), 
+                    Revive (highlights traditional weaving), and Renew (special upcycled pieces made from fabric 
+                    scraps). 
                  <br>
                 </p>
                 <br>
             </div>
     </header>
+
+    <!-- Before Footer section -->
+    <div id="Befooter" class="before">
+        <div class="quote">
+          <div class="day">
+            <h1>Spread the <span>Word.</span></h1>
+          </div>
+          <p>Verde Vogue is committed to providing free access to all who require it.
+            <br> 
+            Support our mission by sharing the positive environmental news and updates with others.</p>
+            <button onclick="copyLink()" class="button">Share</button>
+        </div>
+      </div>
+
+
+    <!-- Footer section -->
+    <footer id="footer">
+      <!-- Content of the footer -->
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic"><h3>About Us</h3></div>
+            <p>Verde Vogue is a treasure trove of helpful knowledge, suggestions, 
+              and recommendations on how to take care of the environment, from choosing 
+              eco-friendly fashion brands to adopting sustainable beauty practices. We 
+              emphasize the importance of considering the impact of our decisions on the 
+              planet and being part of a healthy community that cares about the welfare 
+              of all people</p>
+          </div>
+          <div class="lower">
+            <div class="topic"><h3>Connect with Us</h3></div>
+            <div class="location">
+              <a href="https://www.google.com/maps/place/UPang/@16.6448,120.3774,15z/data=!4m5!3m4!1s0x0:0x645c078188f61195!8m2!3d16.6448!4d120.3774" 
+              target="_blank"><i class="fas fa-location-dot"></i> Arellano St., Dagupan City, Pangasinan, Philippines 2400 </a>
+            </div>
+            <div class="phone">
+              <a href="https://www.google.com/contacts/"><i class="fas fa-phone-volume"></i>(+63) 300 224 1719</a>
+            </div>
+            <div class="email">
+              <a href="mailto:gelotfj@gmail.com"><i class="fas fa-envelope"></i>verdevogue@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic"><h3>Categories</h3></div>
+          <div><a href="#Culture">Culture</a></div><br>
+          <div><a href="#Clothing">Clothing</a></div><br>
+          <div><a href="#Cosmetics">Cosmetics</a></div><br>
+        </div>
+        <div class="right box">
+          <div class="topic">
+            <h3>Newsletter</h3>
+          </div>
+          <span>
+            Subscribe to our newsletter for a weekly dose
+            of news, updates, helpful tips, and
+            product recommendations.
+          </span>
+          <form action="#">
+            <input type="email" placeholder="Enter your email address" required>
+
+            <span>By subscribing, you agree to receive emails from our website.</span>
+            <input type="submit" name="" value="Send">
+          </form>
+            <div class="media-icons">
+              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+<!-- Bottom of the footer -->
+<div class="vbottom">
+  <div class="left-bottom">
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <span> | </span>
+    <a href="/terms-and-regulations.html">Terms and Regulations</a>
+  </div>
+  <p> © 2024 <a href="/main.html">TechieTigers</a>. All rights reserved</p>
+</div>
+    </footer>
+
+    <!-- Scroll skipper -->
+    <div class="skip">
+      <a href="/clothingCONTENT/clotTELA.html"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
 </body>
 </html>

@@ -4,147 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cult1</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Hindy Weber</title>
+    <link rel="stylesheet" type="text/css" href="/css/content.css">
+    <link rel="stylesheet" type="text/css" href="/css/stylez.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/navigation-bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<style>
-/* Import Google Fonts for Poppins, Didot, and Helvetica font families */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Quintessential&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-:root {
-  --green: #0c6b3d;
-  --lite-green: #27963C;
-  --whiteBG: #fff;
-  --shadedBG: #eee;
-  --yellow: #F5DA5E }
 
-#Culture{
-  display: grid;
-  min-width: 960px;
-  max-width: 1920px;
-  margin: 0 auto;  
-  place-items: center;
-  text-align: center;
-  align-items: center;
-  background: var(--whiteBG)
-}
-.back-btn{
-    position: fixed;
-    margin-left: 5px;
-    margin-top: -35px;
-    color: black;
-    font-size: 24px;
-    text-decoration: none;
-}
-.culture-heading{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-size: 7rem ; 
-  color: #333;
-  width: 80%;
-  height: 80px;
-  margin-left: 10%;
-  padding: 2px;
-  box-sizing: border-box;  
-  margin-top: 4rem ;
-  background: rgba(0, 0, 0, .1);
-  font-family: 'Playball', cursive;
-}  
-.clothing-heading span{
-  color: var(--green);
-  font-family: sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
-}
-.content .sub-title{
-  text-align: center;
-  font-family: 'sans-serif';
-  font-size: 30px;
-  font-weight: 200px;
-  color: var(--lite-green);
-}
-.content  img{
-        margin-top: 70px;
-        width: 800px;
-        height: 500px;
-        margin-left: 330px;
-        border-radius: 20px;
-    }
-    .content  h3{
-        margin: auto;
-        width: 80%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .content  h2{
-        margin: auto;
-        width: 80%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-        font-size: 35px;
-    }
-    .content  span{
-        margin: auto;
-        font-size: 20px;
-        margin-left:340px;
-        text-align: center;
-    }
-    .content  p{
-        margin: auto;
-        width: 70%; 
-        width: 60%; 
-        font-family: calibri;
-        font-size: 20px;
-    }
-    .color{
-        font-weight: bold;
-    }
-    .sunki{
-        font-weight: bold;
-    }
-    .overview{
-        font-weight: bold;
-    }
-    .what{
-        font-weight: bold;
-    }
-</style>
+
 <body>
-        <header>
-        <div class="Clothing" >        
-            <a href="/main.html#clothingSEC" class="back-btn"><i class="fas fa-arrow-left"></i></a>
-            <h1 class="culture-heading">Clothing. <span> Discover sustainable innovations </span></h1>
+    <!-- Header section -->
+    <header>
+        <!-- Checkbox for toggling the navigation menu -->
+        <input type="checkbox" name="" id="toggler">
+
+        <!-- Label for the checkbox -->
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <!-- Logo for the website -->
+        <div class="logo">
+          <a href="/main.html">
+            <img src="/images/leaf.png" alt="logo" class="left-logo">
+            <span class="logo-text">VerdeVogue.</span>
+          </a>
         </div>
-            <div class="content">
-                <img src="/clothingPIC/clot9.jpg" alt="">
-                <span class="glyphicon glyphicon-camera"></span> By Alex Assoune
-                <br>
-                <h2>Blazer meets jean jacket</h2>
-                <div class="sub-title">Where Culture Meets Style</div>
+
+        <!-- Navigation menu -->
+        <nav class="navbar">
+          <a href="/main.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/main.html#Culture">Culture</a>
+          <a href="/main.html#Clothing">Clothing</a>
+          <a href="/main.html#Cosmetics">Cosmetics</a>
+          <a href="/contact.html">Contact Us</a>
+        </nav>
+
+        <!-- Search icon and input field -->
+        <div class="search-icon">
+                <input type="search" placeholder="Search...">
+                <label for="search icon">
+                <a href="#" class="fas fa-search"></a>
+                </label>
+        </div>
+    </header>
+    
+    <div class="back-btn">
+        <a href="/main.html#Clothing">
+          <i class="fas fa-arrow-left"></i>
+          <span class="back-label"> Back </span>
+        </a>
+      </div> 
+
+    <div class="content" id="content-body">
+                <img src="/clothingPIC/HINDYWEBER/clotHINDYWEBER.1.jpg" alt="">
+                <a href="https://www.candidclothing.com" target="_blank">
+                    <span id="photographer"><i class="fas fa-camera"></i> by Alex Assoune </span>
+                  </a>                <br>
+                  <h2 id="headingz"> Hindy Weber </h2>
+                  <div class="sub-title"> Hindy Weber Everyday: Nature, Fashion and Motherhood </div>
                 <br>
                 <p>
                     Hindy Weber uses custom non-toxic dyes and natural, organic, biodegradable fabrics.
                     All its products are Earth-conscious and responsibly handmade in the Philippines.
                 <br>
                 </p>
-                <img src="/clothingPIC/clot9.2.jpg" alt="">
+                <img src="/clothingPIC/HINDYWEBER/clotHINDYWEBER.2.jpg" alt="">
                 <br>
                 <p>
                     This printed kimono use the fabric organic cotton
                      <br>m
                 </p>
-                <img src="/clothingPIC/clot9.3.jpg" alt="">
+                <img src="/clothingPIC/HINDYWEBER/clotHINDYWEBER.3.jpg" alt="">
                 <br>
                 <p>
                     The fabric use in Linen Palazzo is Organic Linen 

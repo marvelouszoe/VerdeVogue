@@ -84,15 +84,13 @@ section {
 
 
 
-  
-
 
 /* Home section */
 .home{ /* This is the container for the home section of the page */
   display: flex;
   align-items: center;
-  min-height: 100vh;
-  max-height: 300px;
+  min-height: 1000px;
+  max-height: 1000px;
   height: 100%;
   min-width: 960px;
   max-width: 1920px;
@@ -230,7 +228,8 @@ section {
 }
 
 .kultura .CU-card:hover{
-  border-width: 0 0 0 10px;
+  border-width: 2px;
+  border-color: var(--lite-green);
 }
 .kultura .CU-card .img{
   /* Set height and width */
@@ -335,6 +334,12 @@ section {
   padding: 0.5rem;
   background: var(--shadedBG);
 }
+
+.damit .CL-card:hover{
+  border-width: 2px;
+  border-color: var(--lite-green);
+}
+
 .damit .CL-card .img{
   height: 200px;
   width: 100%;
@@ -428,6 +433,12 @@ section {
   padding: 0.5rem;
   background: var(--shadedBG);
 }
+
+.meykup .COS-card:hover{
+  border-width: 2px;
+  border-color: var(--lite-green);
+}
+
 .meykup .COS-card .img{
   height: 200px;
   width: 100%;
