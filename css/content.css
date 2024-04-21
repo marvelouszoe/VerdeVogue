@@ -28,6 +28,8 @@ body {
     margin: 0 auto;
     background-color: var(--whiteBG);
     padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -35,29 +37,24 @@ body {
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px; /* add this line */
+    margin-bottom: 20px;
   }
 
-.content h1,
-.content h2 {
+#content-body h1,
+#content-body h2 {
     margin-top: -10px;
     margin-bottom: -10px;
     font-family: 'Poppins';
     color: #333;
 }
 
-.content h3 {
-  text-align: center;
-  margin-top: -10px;
-  margin-bottom: -10px;
-}
 
-.content p {
+#content-body p {
     color: #333;
     font-size: 1.2rem;
 }
 
-.content img {
+#content-body img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;

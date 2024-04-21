@@ -497,17 +497,19 @@ section {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: #eee;
-  background: var(--green);
-  padding: 7px 12px;
-  font-size: 18px;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.15);
+  color: #333;
+  background: var(--shadedBG); /* yellow-orange background */
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out; /* add transition effect */
 }
 
-.skip a:hover{
-  color: #fff;
-  transform: scale(0.98);
+.skip a:hover {
+  color: var(--whiteBG);
+  transform: scale(1.05); /* increase scale on hover */
   background: rgb(39,150,60);
-  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* increase box shadow on hover */
 }
