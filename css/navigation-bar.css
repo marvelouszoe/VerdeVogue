@@ -1,0 +1,162 @@
+/* Navigation bar styles */
+header {
+    position: fixed;
+    top: 0;    
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);  
+    padding: .5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+  }
+  
+  /* Logo styles */
+  .logo a {
+    /* Display the logo as a flex container with vertically centered content */
+    display: flex;
+    align-items: center;
+    gap: .1rem;  /* Set a small gap between the image and text */
+    font-size: 2.5rem;  /* Set the font size of the logo text */
+    color: #333;  /* Set the color of the logo text */
+    font-weight: bolder;  /* Set the font weight of the logo text */
+    height: 50px;  /* Set the height of the logo container */
+    line-height: 10px;  /* Set the line height to vertically center the text */
+  }
+  
+  .left-logo {
+    /* Set the width and height of the logo image */
+    width: 50px;
+    height: auto;
+    object-fit: contain;  /* Set the object fit to contain the image within the specified dimensions */
+    cursor: pointer;  /* Set the cursor to a pointer when hovering over the image */
+  }
+  
+  .logo-text {
+    font-family: 'GFS Didot', serif;  /* Set the font family of the logo text */
+  }
+  
+  
+  
+  /* Navbar categories styles */
+  header .navbar a {
+    font-size: 1.5rem;  /* Font size and padding for navbar links */
+    padding: 0 2.3rem;
+    color: #333;  /* Color for navbar categories */
+  }
+  
+  /* Styles for navbar links */
+  .navbar a {  /* Position, color, font size, font weight, padding, and text decoration for navbar links */
+    position: relative;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 0;
+    text-decoration: none;
+  }
+  
+  /* Styles for navbar categories hover effect */
+  .navbar a:before {  /* Content, position, bottom, left, height, width, background, border radius, and transition for navbar link hover effect */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    background: var(--green);
+    border-radius: 12px;
+    transition: all 0.4s ease;
+  }
+  
+  /* Styles for navbar link hover effect */
+  .navbar a:hover:before {
+    width: calc(100% - 4.6rem); /* Adjust the width to be the width of the text minus the padding */
+    transform: translateX(-50%) scale(0.9);
+  }
+  
+  
+  /* Responsive page styles */
+  header #toggler {
+    display: none;
+  }
+  header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgb(0, 0, 0,);
+    display: none;
+  }
+
+  /* Media queries for responsive design */
+@media (max-width: 991px) {
+  /* Reduce font size and adjust padding for smaller screens */
+  html {
+    font-size: 55%;
+  }
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+
+  /* Adjust background position for home section */
+  .home{
+    background-position: left;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Display hamburger menu icon and hide navigation links */
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #eee;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  /* Show navigation links when hamburger menu icon is clicked */
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  /* Adjust styles for navigation links */
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    display: block;
+  }
+
+  /* Adjust font sizes for home section content */
+  .home .content h3{
+    font-size: 5rem;
+  }
+  .home .content span{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  /* Reduce font size for smaller screens */
+  html {
+    font-size: 50%;
+  }
+
+  /* Adjust font size for headings */
+  .heading{
+    font-size: 3rem;
+  }
+}

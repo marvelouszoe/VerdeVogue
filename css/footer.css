@@ -1,0 +1,260 @@
+/* BEFORE FOOTER SECTION START */
+#Befooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00CD54;
+    padding: 2rem 0;
+  }
+  
+  #Befooter .quote {
+    max-width: 70rem;
+    text-align: center;
+  }
+  
+  #Befooter .quote h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  #Befooter .quote span {
+    font-size: 4rem;
+    font-family: 'Playball', cursive;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  #Befooter .quote p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  #Befooter .button {
+    display: inline-block;
+    background-color: var(--yellow);
+    color: #333;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  #Befooter .button:hover {
+    background: rgb(39,150,60);
+    background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);  
+    color: #fff;
+    transform: scale(0.98);
+  }
+  
+  
+  /* FOOTER SECTION START */
+  footer {
+    /* Set the width of the footer to 100% and position it at the bottom of the page */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    /* Set the background color of the footer */
+    background: var(--shadedBG);
+  }
+  
+  footer .content {
+    /* Set the maximum width of the content container and center it */
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;  /* Add some padding to the container */
+    display: flex;  /* Use flexbox to arrange the content in rows and columns */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .content p,a {
+    /* Set the color of the text in the content container */
+    color: #333;
+  }
+  footer .content .box {
+    /* Set the width of each box in the content container */
+    width: 33%;
+    transition: all 0.4s ease;
+  }
+  footer .content .topic {
+    /* Set the font size, weight, and color of the topic headings */
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    /* Add some margin to the bottom of the headings */
+    margin-bottom: 16px;
+  }
+  
+  footer .content p {
+    /* Justify the text in the content container */
+    text-align: justify;
+  }
+  footer .content .lower .topic {
+    /* Add some margin to the top and bottom of the lower topic headings */
+    margin: 24px 0 5px 0;
+  }
+  footer .content .lower i {
+    /* Add some padding to the right of the icons in the lower section */
+    padding-right: 16px;
+  }
+  footer .content .middle {
+    /* Add some padding to the left of the middle section */
+    padding-left: 80px;
+  }
+  footer .content .middle a {
+    /* Set the line height of the links in the middle section */
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  footer .content .middle a:hover {
+    text-decoration: underline;
+    color: var(--green);
+    transform: scale(0.98);
+    font-weight: bold;
+  }
+  footer .content .right input[type="email"] {
+    /* Set the height, width, and other styles for the email input field */
+    height: 50px;
+    width: 100%;
+    outline: none;
+    color: #333;
+    background: var(--whiteBG);
+    border-radius: 5px;
+    padding-left: 12px;
+    font-size: 12px;
+    border: 2px solid #333;
+  }
+  footer .content .right input[type="submit"] {
+    /* Set the height, width, and other styles for the submit button */
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--whiteBG);
+    background: var(--green);
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #eee;
+    /* Add a transition effect to the submit button */
+    transition: all 0.3s ease-in-out;
+  }
+  footer .content .right input[type="submit"]:hover {
+    /* Set the hover styles for the submit button */
+    background: rgb(39,150,60);
+    background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
+    color: var(--whiteBG);
+    transform: scale(0.98);
+  }
+  footer .content .media-icons a {
+    /* Set the styles for the social media icons */
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    /* Add a transition effect to the social media icons */
+    transition: all 0.3s ease;
+  }
+  footer .content .media-icons a:hover {
+    /* Set the hover styles for the social media icons */
+    color: #fff;
+    transform: scale(1);
+    background: rgb(39,150,60);
+    background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
+  }
+  footer .vbottom {
+    /* Set the styles for the bottom text in the footer */
+    width: 100%;
+    text-align: right;
+    color: #333;
+    padding: 0 40px 5px 0;
+    /* Add the Privacy Policy and Terms and Regulations links */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+  }
+  footer .vbottom a {
+    /* Set the styles for the link in the bottom text */
+    color: var(--green);
+  }
+  footer a {
+    /* Add a transition effect to all links in the footer */
+    transition: all 0.3s ease;
+  }
+  footer a:hover {
+    /* Set the hover styles for all links in the footer */
+    text-decoration: underline;
+    color: var(--green);
+  }
+  
+  /* Very Bottom of Footer (PrivPol, Terms&Reg, and TechieTigers */
+  .vbottom a{
+    color: #333;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
+  .vbottom a:hover{
+    color: var(--green);
+  }
+  
+  footer.hidden {
+    /* Hide the footer when it has the "hidden" class */
+    display: none;
+  }
+  /* Add padding to the bottom of the main section to push the footer down */
+  main {
+    padding-bottom: 10rem;
+  }
+  
+  
+  
+  
+  /* This media query targets screens with a maximum width of 1100px */
+  @media (max-width:1100px) {
+    /* The footer's content's middle section has its padding-left set to 50px */
+    footer .content .middle {
+      padding-left: 50px;
+    }
+  }
+  
+  /* This media query targets screens with a maximum width of 950px */
+  @media (max-width:950px) {
+    /* The footer's content's box has its width set to 50% */
+    footer .content .box {
+      width: 50%;
+    }
+    /* The content's right section has its margin-top set to 40px */
+    .content .right {
+      margin-top: 40px;
+    }
+  }
+  
+  /* This media query targets screens with a maximum width of 560px */
+  @media (max-width:560px) {
+    /* The footer is positioned relative */
+    footer {
+      position: relative;
+    }
+    /* The footer's content's box has its width set to 100% and margin-top set to 30px */
+    footer .content .box {
+      width: 100%;
+      margin-top: 30px;
+    }
+    /* The footer's content's middle section has its padding-left set to 0 */
+    footer .content .middle {
+      padding-left: 0;
+    }
+  }

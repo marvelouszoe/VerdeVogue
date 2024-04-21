@@ -1,0 +1,515 @@
+/* Import Google Fonts for Poppins, Didot, and Helvetica font families */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+:root {
+  --green: #0c6b3d;
+  --lite-green: #27963C; 
+  --whiteBG: #fff;
+  --shadedBG: #eee;
+  --yellow: #F5DA5E }
+
+
+/* General styles for all elements */
+* {
+  /* Reset margins, padding, and borders for all elements */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;  /* Set the font family for all elements */
+  /* Remove default outlines, borders, and text decorations */
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: .2s linear;  /* Set a smooth transition for all properties */
+}
+
+/* Set font size, scroll behavior, and overflow for the HTML element */
+html {
+  font-size: 62.5%;  /* Set the font size to 62.5% to make it easier to calculate rem units.
+     For example, 1rem will be equal to 10px, 1.6rem will be equal to 16px, and so on. */
+  scroll-behavior: smooth;  /* Enable smooth scrolling when jumping to anchor links within the page. */
+  scroll-padding-top: 16rem;  /* Add scroll padding to the top of the HTML element to account for the fixed header.
+     This ensures that the content does not get hidden behind the header when jumping to anchor links. */
+  overflow-x: hidden;  /* Hide any horizontal overflow to prevent horizontal scrolling. */
+}
+
+/* Section styles */
+section {
+  padding: 2rem 9%;
+  min-width: 960px;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 5rem; /* Add some margin at the top of each section */
+  background: var(--whiteBG);
+}
+
+/* Heading styles */
+.heading{
+  text-align: center;  /* Text alignment for the heading */
+  font-size: xx-large;  /* Font size for the heading */
+  font-family: 'Playball', cursive;  /* Font family for the heading */
+  color: #333;  /* Color for the heading */
+  padding: 1rem;  /* Padding for the heading */
+  margin: 2rem 0;  /* Margin for the heading */
+  background: rgba(0, 0, 0, .1);  /* Background color for the heading */
+}
+
+/* Span styles within the heading */
+.heading span{
+  color: var(--green);  /* Color for the span within the heading */
+  font-size: 4rem;  /* Font size for the span within the heading */
+}
+
+/* Button styles */
+.button{
+  display: inline-block;  /* Display property for the button */
+  margin-top: 1rem;  /* Margin for the button */
+  border-radius: 5rem;  /* Border radius for the button */
+  background: #333;  /* Background color for the button */
+  color: #fff;  /* Color for the button text */
+  padding: .9rem 3.5rem;  /* Padding for the button */
+  cursor: pointer;  /* Cursor style for the button */
+  font-size: 1.7rem;  /* Font size for the button text */
+}
+
+/* Button hover styles */
+.button:hover{
+  transform: scale(0.98);  /* Transform property for the button on hover */
+  background: rgb(39,150,60);  /* Background gradient for the button on hover */
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
+}
+
+
+
+
+/* Home section */
+.home{ /* This is the container for the home section of the page */
+  display: flex;
+  align-items: center;
+  min-height: 1000px;
+  max-height: 1000px;
+  height: 100%;
+  min-width: 960px;
+  max-width: 1920px;
+  margin: 0 auto;  
+  background: url(/images/aloe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.home .content{ /* This is the container for the content within the home section */
+  max-width: 80rem;
+}
+.home .content h3{ /* This is the heading for the home section */
+  font-size: 7rem;
+  color: #333;
+}
+.home .content span{ /* This is the span element within the heading */
+  font-size: 3.5rem;
+  color: var(--green); /* This is the color variable for the span element */
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.home .content p{ /* This is the paragraph element within the home section */
+  font-size: 1.5rem;
+  color: #6f6f6f; /* This is the color variable for the paragraph element */
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+
+
+/* This CSS code is for the 'About' section of a website */
+.about .row{
+  display: flex; /* This property is used to create a flex container and align items in the center */
+  align-items: center;
+  gap: 2rem; /* This property is used to create a gap between the flex items */
+  flex-wrap: wrap; /* This property is used to allow the flex items to wrap onto multiple lines */
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.about .row .imgBG-container{
+  flex: 1 1 40rem; /* This property is used to define the size of the flex item */
+  position: relative; /* This property is used to position the child elements relative to this container */
+}
+
+.about .row .imgBG-container img{
+  width: 100%; /* This property is used to set the width of the image to 100% of its parent container */
+  border:1.5rem solid #fff; /* This property is used to add a white border to the image */
+  border-radius: .5rem; /* This property is used to add rounded corners to the image */
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); /* This property is used to add a shadow to the image */
+  height: 100%; /* This property is used to set the height of the image to 100% of its parent container */
+  object-fit: cover; /* This property is used to ensure the image covers the entire container while maintaining its aspect ratio */
+}
+
+.about .row .imgBG-container h3{
+  position: absolute; /* This property is used to position the heading over the background image */
+  top: 50%; transform: translateY(-50%); /* This property is used to center the heading vertically */
+  font-size: 3rem; /* This property is used to set the font size of the heading */
+  color: #333; /* This property is used to set the color of the heading */
+  background-color: #fff; /* This property is used to set the background color of the heading */
+  width: 100%; /* This property is used to set the width of the heading to 100% of its parent container */
+  padding: 1rem 2rem; /* This property is used to add padding to the heading */
+  text-align: center; /* This property is used to center the text of the heading */
+  mix-blend-mode: normal; /* This property is used to define how the heading should blend with its background */
+}
+
+.about .row .content{
+  flex: 1 1 40rem; /* This property is used to define the size of the flex item */
+}
+
+.about .row .content h3{
+  font-size: 3rem; /* This property is used to set the font size of the heading */
+  color: #333; /* This property is used to set the color of the heading */
+}
+
+.about .row .content p{
+  font-size: 1.5rem; /* This property is used to set the font size of the paragraph */
+  color: #333; /* This property is used to set the color of the paragraph */
+  text-align: justify; /* This property is used to justify the text of the paragraph */
+  padding: 5rem 0; /* This property is used to add padding to the paragraph */
+  padding-top: 1rem; /* This property is used to add padding to the top of the paragraph */
+  line-height: 1; /* This property is used to set the line height of the paragraph */
+}
+
+
+/* Culture section */
+#Culture{
+  /* Display as a grid, set minimum and maximum width, center content, and apply background color */
+  display: grid;
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+  min-width: 960px;
+  max-width: 1920px;
+  margin: 0 auto;  
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  background: var(--whiteBG);
+}
+
+.culture-heading{
+  /* Center text, set font size, align and justify content, set color, width, padding, and margin */
+  text-align: center;
+  font-size: 4rem;
+  align-items: baseline;
+  justify-content: center;
+  color: #333;
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;  margin: 2rem 0;
+  background: rgba(0, 0, 0, .1);
+  font-family: 'Playball', cursive;
+}  
+.culture-heading span{
+  /* Set color and font size for span element */
+  color: #0C4B31;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+  
+.kultura{
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 columns */
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+.kultura .CU-card{
+  border: 2px solid var(--whiteBG);
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: var(--shadedBG);
+}
+
+.kultura .CU-card:hover{
+  border-width: 2px;
+  border-color: var(--lite-green);
+}
+.kultura .CU-card .img{
+  /* Set height and width */
+  height: 200px;
+  width: 100%;
+}
+.kultura .CU-card .img img{
+  /* Set height and width, and object fit */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.kultura .CU-card .content{
+  /* Set padding */
+  padding: 10px 20px;
+}
+.CU-card .content .title{
+  /* Set font size and weight */
+  font-size: 24px;
+  font-weight: 600;
+}
+.CU-card .content .sub-title{
+  /* Set font size, weight, color, and line height */
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--lite-green);
+  line-height: 20px;
+}
+.CU-card .content p{
+  /* Set text alignment and margin */
+  text-align: justify;
+  margin: 10px 0;
+}
+.CU-card .content .btn{
+  /* Set text alignment and margin */
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.CU-card .content .btn button{
+  /* Set background color, color, border, font size, padding, border radius, and cursor */
+  background: var(--green);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5rem;
+  display: inline-block;
+}
+.CU-card .content .btn button:hover{
+  /* Set transform, background color, and transition */
+  transform: scale(0.98);
+  background: rgb(39,150,60);
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);
+}
+
+
+/* Clothing section */
+#Clothing{
+  display: grid;
+  min-width: 960px;
+  max-width: 1920px;
+  margin: 0 auto;  
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  background: var(--whiteBG)
+
+}
+.clothing-heading{
+  text-align: center;
+  font-size: 4rem;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 4rem;
+  color: #333;
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;  margin: 2rem 0;
+  background: rgba(0, 0, 0, .1);
+  font-family: 'Playball', cursive;
+}  
+.clothing-heading span{
+  color: var(--green);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.damit{
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 columns */
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+.damit .CL-card{
+  border: 2px solid var(--whiteBG);
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: var(--shadedBG);
+}
+
+.damit .CL-card:hover{
+  border-width: 2px;
+  border-color: var(--lite-green);
+}
+
+.damit .CL-card .img{
+  height: 200px;
+  width: 100%;
+}
+.damit .CL-card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.damit .CL-card .content{
+  padding: 10px 20px;
+}
+.CL-card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.CL-card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--lite-green);
+  line-height: 20px;
+}
+.CL-card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.CL-card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.CL-card .content .btn button{
+  background: var(--green);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5rem;
+  display: inline-block;
+}
+.CL-card .content .btn button:hover{
+  transform: scale(0.98);
+  background: rgb(39,150,60);
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%); }
+
+
+/* Cosmetics section */
+#Cosmetics{
+  display: grid;
+  min-width: 960px;
+  max-width: 1920px;
+  margin: 0 auto;  
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  background: var(--whiteBG)
+
+}
+.cosmetics-heading{
+  text-align: center;
+  font-size: 4rem;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 4rem;
+  color: #333;
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;  margin: 2rem 0;
+  background: rgba(0, 0, 0, .1);
+  font-family: 'Playball', cursive;
+}  
+.cosmetics-heading span{
+  color: var(--green);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.meykup{
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a grid with 4 columns */
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+.meykup .COS-card{
+  border: 2px solid var(--whiteBG);
+  border-radius: 4px;
+  padding: 0.5rem;
+  background: var(--shadedBG);
+}
+
+.meykup .COS-card:hover{
+  border-width: 2px;
+  border-color: var(--lite-green);
+}
+
+.meykup .COS-card .img{
+  height: 200px;
+  width: 100%;
+}
+.meykup .COS-card .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.meykup .COS-card .content{
+  padding: 10px 20px;
+}
+.COS-card .content .title{
+  font-size: 25px;
+  font-weight: 600;
+}
+.COS-card .content .sub-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--lite-green);
+  line-height: 20px;
+}
+.COS-card .content p{
+  text-align: justify;
+  margin: 10px 0;
+}
+.COS-card .content .btn{
+  display: block;
+  text-align: left;
+  margin: 10px 0;
+}
+.COS-card .content .btn button{
+  background: var(--green);
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 5rem;
+  display: inline-block;
+}
+.COS-card .content .btn button:hover{
+  transform: scale(0.98);
+  background: rgb(39,150,60);
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%); }
+
+
+
+
+
+/* skip styles */
+.skip a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #333;
+  background: var(--shadedBG); /* yellow-orange background */
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out; /* add transition effect */
+}
+
+.skip a:hover {
+  color: var(--whiteBG);
+  transform: scale(1.05); /* increase scale on hover */
+  background: rgb(39,150,60);
+  background: linear-gradient(90deg, rgba(39,150,60,1) 0%, rgba(12,107,61,1) 100%);  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* increase box shadow on hover */
+}
